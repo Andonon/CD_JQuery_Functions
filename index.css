@@ -1,0 +1,95 @@
+/***************************************************************/
+/* Created: INSERTDATE by Troy Center, troycenter1@gmail.com.   */
+/* INSERT DESCRIPTION                                        */
+/***************************************************************/
+
+/***************************************************/
+/*               CSS reset settings                */
+/***************************************************/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "acme";
+}
+
+/***************************************************/
+/*        Comment Block for CSS only               */
+/***************************************************/
+#pageheader {
+    border-bottom: 4px groove grey;
+    width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: "acme";
+    }
+#pageheader h1{
+    text-shadow: 2px 2px 2px grey;
+}
+#mainwrapper{
+    background-image: linear-gradient(grey, white);
+    height: 1500px; 
+    width: 1200px;
+    margin: 0 auto;
+}
+.articlewrapper {
+    border-bottom: 2px groove grey;
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.articlebuttons {
+    width: 300px;
+    display: inline-block;
+}
+
+.articledetail {
+    width: 500px;
+    display: inline-block;
+}
+
+#clickbutton1 {
+    height: 30px;
+    width: 170px; 
+    font-weight: bold;
+    color: #533b05;
+    border-radius: 5px;   
+    margin-top: 30px;
+}
+#clickbutton2 {
+    height: 30px;
+    width: 170px; 
+    font-weight: bold;
+    color: #533b05;
+    border-radius: 5px; 
+}
+#articledetail h2 {
+    text-align: center;
+    color: black;
+    font-weight: lighter;
+    text-shadow: 2px 2px 2px grey; 
+    margin: 20px;
+    }
+
+#articledetail p {
+    text-align: center;
+    color: black;
+    margin: 20px;
+    }
+
+#clicktest {
+    height: 50px;
+    width: 500px;
+    margin: 20px;
+    background-color: orange;
+    border: 2px solid black;
+}
+
+
+footer {
+    text-align: center;
+    font-size: 10px;
+}
