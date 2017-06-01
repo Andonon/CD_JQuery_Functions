@@ -14,7 +14,7 @@
 }
 
 /***************************************************/
-/*        Comment Block for CSS only               */
+/*      Page Header info                           */
 /***************************************************/
 #pageheader {
     border-bottom: 4px groove grey;
@@ -27,32 +27,72 @@
 #pageheader h1{
     text-shadow: 2px 2px 2px grey;
 }
-#mainwrapper{
+
+/***************************************************/
+/*    Setting up the wrappers               */
+/***************************************************/
+
+
+#effectswrapper{
     background-image: linear-gradient(grey, white);
-    height: 1500px; 
+    background-repeat: repeat-y;
+    height: fit-content; 
     width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
+}
+#csswrapper{
+    background-image: linear-gradient(grey, white);
+    background-repeat: repeat-y;
+    height: fit-content; 
+    width: 1200px;
+    margin: 20px auto;
+}
+#manipulationwrapper{
+    background-image: linear-gradient(grey, white);
+    background-repeat: repeat-y;
+    height: fit-content; 
+    width: 1200px;
+    margin: 20px auto;
+}
+#eventswrapper{
+    background-image: linear-gradient(grey, white);
+    background-repeat: repeat-y;
+    height: fit-content; 
+    width: 1200px;
+    margin: 20px auto;
+}
+section h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+h1 span {
+    color: orange;
+    font-size: 30px;
 }
 .articlewrapper {
-    border-bottom: 2px groove grey;
     width: 900px;
-    height: 170px;
+    height: fit-content; 
     margin: 0 auto;
     padding-top: 20px;
     text-align: center;
 }
 
+
+/***************************************************/
+/*       Buttons                                   */
+/***************************************************/
+
 .articlebuttons {
     width: 300px;
     height: 150px;
     display: inline-block;
+    vertical-align: top;
 }
-
 .articledetail {
     width: 500px;
     display: inline-block;
 }
-
 .eventbuttonbottom {
     height: 30px;
     width: 170px; 
@@ -68,6 +108,19 @@
     border-radius: 5px;       
     margin-top: 30px;
 }
+.eventbuttontoppurple {
+    height: 30px;
+    width: 170px; 
+    font-weight: bold;
+    color: #533b05;
+    background-color: purple;
+    border-radius: 5px;       
+    margin-top: 30px;
+}
+
+/***************************************************/
+/*     Article Details Section, right side         */
+/***************************************************/
 
 #articledetail h2 {
     text-align: center;
@@ -83,23 +136,40 @@
     margin: 20px;
     }
 
+
+/***************************************************/
+/*    Orange Response Boxes for test results       */
+/***************************************************/
+
 .clicktest {
-    height: 50px;
+    height: fit-content;
     width: 500px;
     margin: 20px;
     background-color: orange;
     border: 2px solid black;
 }
 .clicktest2 {
-    height: 50px;
+    height: fit-content;
     width: 500px;
     margin: 20px;
     background-color: green;
     color: white;
     border: 2px solid black;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    
+
+
+/***************************************************/
+/*   Input box for the last item.                  */
+/***************************************************/
+   
 }
+#yourname {
+    width: 200px;
+}
+
+/***************************************************/
+/*        Footer Styling                           */
+/***************************************************/
 
 footer {
     text-align: center;

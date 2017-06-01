@@ -19,20 +19,8 @@
         <header id="pageheader">
             <h1>JQuery Functions</h1>
         </header>
-        <Section id="mainwrapper">
-            <article id=".click">
-                <div class=articlewrapper>
-                    <div class=articlebuttons>
-                        <button id="clickbutton1" class="eventbuttontop" type="button">Test ".click() - red"</button>
-                        <button id="clickbutton2" class="eventbuttonbottom" type="button">Test ".click() - white"</button>
-                    </div
-                    ><div class=articledetail>
-                        <h2>.click()</h2>
-                        <p>Bind an event handler to the “click” JavaScript event, or trigger that event on an element.</p>
-                        <div id="clicktest" class="clicktest"><p>Push the "Test .click()" button to make this box turn red, or white.</p></div>
-                    </div>
-                </div>
-            </article>
+        <Section id="effectswrapper">
+            <h1><span class="bigorangetitletext">Effects</span> (functions to do some cool animation effects)</h1>
             <article id=".hideshow">
                 <div class=articlewrapper>
                     <div class=articlebuttons>
@@ -70,11 +58,13 @@
                     </div
                     ><div class=articledetail>
                         <h2>.fadeIn(), .fadeOut(), and fadeTo()</h2>
-                        <p>Hide the matched Elements, or Show the matched Elements by fading them to opaque. fadeTo() is set to 50% opacity. *Note: you need to fadeOut after fadeTo, in order to reset the box. Why do you think that is?</p>
+                        <p>Hide the matched Elements, or Show the matched Elements by fading them to opaque. fadeTo() is set to 50% opacity. *Note: you need to refresh the page in order to reset the box. Why do you think that is?</p>
                         <div id="fadetest" class="clicktest"><p>Push the "Test .fadeIn()", "Test .fadeOut()" or "Test fadeTo()" button to make this box fade in or out.</p></div>
                     </div>
                 </div>
             </article>
+        <Section id="csswrapper">
+            <h1><span class="bigorangetitletext">CSS</span> (adding or removing a class for any HTML element/DOM)</h1>
             <article id=".cssaddremoveshow">
                 <div class=articlewrapper>
                     <div class=articlebuttons>
@@ -84,25 +74,165 @@
                     ><div class=articledetail>
                         <h2>.addClass() and .removeClass()</h2>
                         <p>Adds the specified class(es) to each element in the set of matched elements, or Remove a single class, multiple classes, or all classes from each element in the set of matched elements.</p>
-                        <div id="cssaddremovetest" class="clicktest"><p>Push the "Test ".addClass()" button to change the box to a new class "clicktest2". Push the "Test .removeClass()" button to remove the clicktest2 class.</p></div>
+                        <div id="cssaddremovetest" class="clicktest"><p>Push the "Test ".addClass()" button to change the box to a new class "clicktest2". Push the "Test .removeClass()" button to remove the clicktest2 class. We're adding a class that has green background and white text.</p></div>
                     </div>
                 </div>
             </article>
             <article id=".cssclassshow">
                 <div class=articlewrapper>
                     <div class=articlebuttons>
-                        <button id="cssgetterbutton" class="eventbuttonbottom" type="button">Test ".css() (getter)"</button>
+                        <button id="cssgetterbutton" class="eventbuttontop" type="button">Test ".css() (getter)"</button>
                         <button id="csssetterbutton" class="eventbuttonbottom" type="button">Test ".css() (setter)"</button>
-                        <button id="csssetter2button" class="eventbuttonbottom" type="button">Test ".css() (setter)"</button>
+                        <button id="csssetter2button" class="eventbuttonbottom" type="button">Test ".css() (setter) (revert)"</button>
                     </div
                     ><div class=articledetail>
                         <h2>.css()</h2>
                         <p>Get the value of a computed style property for the first element in the set of matched elements or set one or more CSS properties for every matched element. Can be used as a setter or a getter, as demonstrated here...</p>
-                        <div id="csstest" class="clicktest"><p>Push the "Test .css()" button to Push the "Test .css() getter"" button to get the stats on this box, "Test .css() setter" button to make this box red with white font.</p></div>
+                        <div id="csstest" class="clicktest"><p>Push the "Test .css() getter"" button to get the stats on this box, "Test .css() setter" button to make this box red with white font. Push the second setter button to go back.</p></div>
+                    </div>
+                </div>
+            </article>
+        </Section>
+        <Section id="manipulationwrapper">
+            <h1><span class="bigorangetitletext">DOM Manipulation</span> (retrieving or setting value or text in any HTML element)</h1>            
+            <article id=".aftershow">
+                <div class=articlewrapper>
+                    <div class=articlebuttons>
+                        <button id="afterbutton" class="eventbuttontop" type="button">Test ".before()"</button>
+                        <button id="beforebutton" class="eventbuttonbottom" type="button">Test ".after())"</button>
+                    </div
+                    ><div class=articledetail>
+                        <h2>.before() and .after()</h2>
+                        <p>Insert content, specified by the parameter, before (or after) each element in the set of matched elements.</p>
+                        <div id="beforeaftertest" class="clicktest"><p>Push the "Test .before()" and "Test .after()" buttons add text before or after the text box.<p></div>
+                    </div>
+                </div>
+            </article>
+            <article id="appendshow">
+                <div class=articlewrapper>
+                    <div class=articlebuttons>
+                        <button id="prependbutton" class="eventbuttontop" type="button">Test ".prepend()"</button>
+                        <button id="appendbutton" class="eventbuttonbottom" type="button">Test ".append()"</button>
+                    </div
+                    ><div class=articledetail>
+                        <h2>.prepend() and .append()</h2>
+                        <p>Insert content, specified by the parameter, to the beginning (or end) of each element in the set of matched elements.</p>
+                        <div id="prependappendtest" class="clicktest"><p>Push the "Test .prepend()" and "Test .append()" buttons add text before or after the text IN the box.<p></div>
+                    </div>
+                </div>
+            </article>
+            <article id="attribshow">
+                <div class=articlewrapper>
+                    <div class=articlebuttons>
+                        <button id="attrgetbutton" class="eventbuttontop" type="button">Test ".attr() (get)"</button>
+                        <button id="attrsetbutton" class="eventbuttonbottom" type="button">Test ".attr() (set)"</button>
+                    </div
+                    ><div class=articledetail>
+                        <h2>.attr() (getter and setter)</h2>
+                        <p>Get (or set) the value of an attribute for the first element in the set of matched elements.</p>
+                        <div id="attribtest" class="clicktest"><p>Push the "Test .attrib() (get)" button to get class from the buttonn. Push the "Test .attrib() (set)" button to set th class for the button to "eventbuttonpurple". Click the 'get' button again to get the new class value.<p></div>
+                    </div>
+                </div>
+            </article>
+            <article id="htmlshow">
+                <div class=articlewrapper>
+                    <div class=articlebuttons>
+                        <button id="htmlgetbutton" class="eventbuttontop" type="button">Test ".html()"</button>
+                        <button id="htmlsetbutton" class="eventbuttonbottom" type="button">Test ".html()"</button>
+                    </div
+                    ><div class=articledetail>
+                        <h2>.html()</h2>
+                        <p>Get (or set) the HTML contents of the first element in the set of matched elements.</p>
+                        <div id="htmltest" class="clicktest"><p>Push the "Test .html() (get)" button to get the html description. Push the "Test .html() (set) to alter the text in the box to the right.<p></div>
+                    </div>
+                </div>
+            </article>
+            <article id="textshow">
+                <div class=articlewrapper>
+                    <div class=articlebuttons>
+                        <button id="textgetbutton" class="eventbuttontop" type="button">Test ".text() (get)"</button>
+                        <button id="textsetbutton" class="eventbuttonbottom" type="button">Test ".text() (set)"</button>
+                    </div
+                    ><div class=articledetail>
+                        <h2>.text()</h2>
+                        <p>Get the combined text contents of each element in the set of matched elements, including their descendants.</p>
+                        <div id="texttest" class="clicktest"><p>Push the "Test .text()" button to change the contents of this box, to the text from this article.<p></div>
+                    </div>
+                </div>
+            </article>
+            <article id="valshow">
+                <div class=articlewrapper>
+                    <div class=articlebuttons>
+                        <p>Enter your name: </p>
+                        <input id="yourname" class"yournameinput" type="text"></input>
+                        <button id="valbutton" class="eventbuttonbottom" type="button">Test ".val()"</button>
+                    </div
+                    ><div class=articledetail>
+                        <h2>.val()</h2>
+                        <p>Get the current value of the first element in the set of matched elements.</p>
+                        <div id="valtest" class="clicktest"><p>Push the "Test .val()" button. Val allows you to update the value of input boxes, and to capture and set arrays in inpyt boxes. Used with forms, from my understanding.<p></div>
+                    </div>
+                </div>
+            </article>   
+         </Section>
+        <Section id="eventswrapper">
+            <h1><span class="bigorangetitletext">Events</span> (functions to handle an event)</h1>            
+            <article id=".clickshow">
+                <div class=articlewrapper>
+                    <div class=articlebuttons>
+                        <button id="clickbutton1" class="eventbuttontop" type="button">Test ".click() - red"</button>
+                        <button id="clickbutton2" class="eventbuttonbottom" type="button">Test ".click() - white"</button>
+                    </div
+                    ><div class=articledetail>
+                        <h2>.click()</h2>
+                        <p>Bind an event handler to the “click” JavaScript event, or trigger that event on an element.</p>
+                        <div id="clicktest" class="clicktest"><p>Push the "Test .click()" button to make this box turn red, or white.</p></div>
                     </div>
                 </div>
             </article>
 
+
+            
+            <article id=".onshow">
+                <div class=articlewrapper>
+                    <div class=articlebuttons>
+                        <button id="clickbutton" class="eventbuttontop" type="button">Test ".before()"</button>
+                        <button id="beforebutton" class="eventbuttonbottom" type="button">Test ".after())"</button>
+                    </div
+                    ><div class=articledetail>
+                        <h2>.before() and .after()</h2>
+                        <p>Insert content, specified by the parameter, before (or after) each element in the set of matched elements.</p>
+                        <div id="beforeaftertest" class="clicktest"><p>Push the "Test .before()" and "Test .after()" buttons add text before or after the text box.<p></div>
+                    </div>
+                </div>
+            </article>
+            <article id=".liveshow">
+                <div class=articlewrapper>
+                    <div class=articlebuttons>
+                        <button id="afterbutton" class="eventbuttontop" type="button">Test ".before()"</button>
+                        <button id="beforebutton" class="eventbuttonbottom" type="button">Test ".after())"</button>
+                    </div
+                    ><div class=articledetail>
+                        <h2>.before() and .after()</h2>
+                        <p>Insert content, specified by the parameter, before (or after) each element in the set of matched elements.</p>
+                        <div id="beforeaftertest" class="clicktest"><p>Push the "Test .before()" and "Test .after()" buttons add text before or after the text box.<p></div>
+                    </div>
+                </div>
+            </article>
+            <article id=".hovershow">
+                <div class=articlewrapper>
+                    <div class=articlebuttons>
+                        <button id="afterbutton" class="eventbuttontop" type="button">Test ".before()"</button>
+                        <button id="beforebutton" class="eventbuttonbottom" type="button">Test ".after())"</button>
+                    </div
+                    ><div class=articledetail>
+                        <h2>.before() and .after()</h2>
+                        <p>Insert content, specified by the parameter, before (or after) each element in the set of matched elements.</p>
+                        <div id="beforeaftertest" class="clicktest"><p>Push the "Test .before()" and "Test .after()" buttons add text before or after the text box.<p></div>
+                    </div>
+                </div>
+            </article>
+         </Section>
     </body>
     <footer>
         <p>by Troy Center, Coding Dojo 2017. </p>
