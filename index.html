@@ -12,35 +12,7 @@
         <title>Intro to JQuery</title>
         <link rel="stylesheet" type="text/css" href="index.css">
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript">
-            "use strict";
-            $(document).ready(function(){
-                $("#clickbutton1").click(function(){
-                    $("#clicktest").css("background-color", "red");
-                });    
-                $("#clickbutton2").click(function(){
-                    $("#clicktest").css("background-color", "white");
-                });    
-                $("#hidebutton").click(function(){
-                    $("#hidetest").hide();
-                });    
-                $("#showbutton").click(function(){
-                    $("#hidetest").show();
-                });    
-                $("#togglebutton").click(function(){
-                    $("#hidetest").toggle();
-                });    
-                $("#slideupbutton").click(function(){
-                    $("#slidetest").slideUp();
-                });    
-                $("#slidedownbutton").click(function(){
-                    $("#slidetest").slideDown();
-                });    
-                $("#slidetogglebutton").click(function(){
-                    $("#slidetest").slideToggle();
-                });    
-            });
-        </script>
+        <script type="text/javascript" src="js/index.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     </head>
     <body>
@@ -89,6 +61,48 @@
                     </div>
                 </div>
             </article>
+            <article id=".fadeshow">
+                <div class=articlewrapper>
+                    <div class=articlebuttons>
+                        <button id="fadeoutbutton" class="eventbuttontop" type="button">Test ".fadeOut()"</button>
+                        <button id="fadeinbutton" class="eventbuttonbottom" type="button">Test ".fadeIn()"</button>
+                        <button id="fadetobutton" class="eventbuttonbottom" type="button">Test ".fadeTo()"</button>
+                    </div
+                    ><div class=articledetail>
+                        <h2>.fadeIn(), .fadeOut(), and fadeTo()</h2>
+                        <p>Hide the matched Elements, or Show the matched Elements by fading them to opaque. fadeTo() is set to 50% opacity. *Note: you need to fadeOut after fadeTo, in order to reset the box. Why do you think that is?</p>
+                        <div id="fadetest" class="clicktest"><p>Push the "Test .fadeIn()", "Test .fadeOut()" or "Test fadeTo()" button to make this box fade in or out.</p></div>
+                    </div>
+                </div>
+            </article>
+            <article id=".cssaddremoveshow">
+                <div class=articlewrapper>
+                    <div class=articlebuttons>
+                        <button id="addclassbutton" class="eventbuttontop" type="button">Test ".addClass()"</button>
+                        <button id="removeclassbutton" class="eventbuttonbottom" type="button">Test ".removeClass()"</button>
+                    </div
+                    ><div class=articledetail>
+                        <h2>.addClass() and .removeClass()</h2>
+                        <p>Adds the specified class(es) to each element in the set of matched elements, or Remove a single class, multiple classes, or all classes from each element in the set of matched elements.</p>
+                        <div id="cssaddremovetest" class="clicktest"><p>Push the "Test ".addClass()" button to change the box to a new class "clicktest2". Push the "Test .removeClass()" button to remove the clicktest2 class.</p></div>
+                    </div>
+                </div>
+            </article>
+            <article id=".cssclassshow">
+                <div class=articlewrapper>
+                    <div class=articlebuttons>
+                        <button id="cssgetterbutton" class="eventbuttonbottom" type="button">Test ".css() (getter)"</button>
+                        <button id="csssetterbutton" class="eventbuttonbottom" type="button">Test ".css() (setter)"</button>
+                        <button id="csssetter2button" class="eventbuttonbottom" type="button">Test ".css() (setter)"</button>
+                    </div
+                    ><div class=articledetail>
+                        <h2>.css()</h2>
+                        <p>Get the value of a computed style property for the first element in the set of matched elements or set one or more CSS properties for every matched element. Can be used as a setter or a getter, as demonstrated here...</p>
+                        <div id="csstest" class="clicktest"><p>Push the "Test .css()" button to Push the "Test .css() getter"" button to get the stats on this box, "Test .css() setter" button to make this box red with white font.</p></div>
+                    </div>
+                </div>
+            </article>
+
     </body>
     <footer>
         <p>by Troy Center, Coding Dojo 2017. </p>
