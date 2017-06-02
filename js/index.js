@@ -1,12 +1,5 @@
-
 "use strict";
     $(document).ready(function(){
-        $("#clickbutton1").click(function(){
-            $("#clicktest").css("background-color", "red");
-        });    
-        $("#clickbutton2").click(function(){
-            $("#clicktest").css("background-color", "white");
-        });    
         $("#hidebutton").click(function(){
             $("#hidetest").hide();
         });    
@@ -90,8 +83,32 @@
         });    
         $("#valbutton").click(function(){
             var valbuttontext = $("#yourname").val();
-                alert("You entered "+valbuttontext+", however I'm gonna adjust that a little... ")
-            console.log(valbuttontext);
-            $("input:text").val("Glenn Quagmire, oh yeah!")
+                alert("You entered "+valbuttontext+", however I'm gonna adjust that a little... he he.");
+            $("input:text").val("Glenn Quagmire, oh yeah!");
         });    
-    });
+        $("#clickbutton1").click(function(){
+            $("#clicktest").css("background-color", "red");
+        });    
+        $("#clickbutton2").click(function(){
+            $("#clicktest").css("background-color", "white");
+        });    
+        $("#onbutton").click(function(){
+            $("#ontestbutton").on("click", notify);
+        });    
+        function notify() {
+            alert( "Congratulations, you just triggered the listener!" );
+        };
+        //$("#livebutton").live( "click", function() {
+        //    console.log("test fire");
+        //    alert("You just clicked the button..."); 
+        //});
+        $("#hoverbuttontest").hover(
+            function(){
+            $("#hoverbuttontest").text("CodingDojo is an awesome place to learn to code!");
+            },
+            function(){
+            $("#hoverbuttontest").text("Hover here (hold your mouse over THIS) to see the secret message.");
+            });
+        }
+    );    
+    
